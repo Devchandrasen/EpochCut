@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epochcut"
+version = "0.1.0"
+description = "Verifiable attack-path closure for dynamic multi-agent LLM runtimes"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Chandrasen Pandey", email = "chandrasen.pandey@ddn.upes.ac.in" },
+  { name = "Vaibhav Tiwari", email = "vaibhav.tiwari@bennett.edu.in" },
+  { name = "Ashish Pandey", email = "ashish.pandey@jaipur.manipal.edu" },
+]
+keywords = [
+  "agentic-ai",
+  "multi-agent-systems",
+  "runtime-security",
+  "prompt-injection",
+  "model-context-protocol",
+  "graph-cuts",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+]
+mcp-eval = [
+  "httpx==0.28.1",
+  "mcp==2.0.0",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"

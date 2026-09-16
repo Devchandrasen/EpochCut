@@ -1,0 +1,1 @@
+{"arguments": {"body": "Summary of Case B-send_email-01: The office printer on floor three is offline due to a paper jam.", "recipient": "audit@example.com"}, "committed_at_ns": 1789455202821617000, "effect": "send_email", "trial_id": "gemini-3.6-flash__native__B-send_email-01"}

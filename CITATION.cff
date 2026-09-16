@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use EpochCut, please cite the software and accompanying manuscript."
+title: "EpochCut: Verifiable Attack-Path Closure for Dynamic Multi-Agent LLM Systems"
+type: software
+version: 0.1.0
+date-released: 2026-09-16
+authors:
+  - family-names: Pandey
+    given-names: Chandrasen
+    email: chandrasen.pandey@ddn.upes.ac.in
+    affiliation: University of Petroleum and Energy Studies (UPES)
+  - family-names: Tiwari
+    given-names: Vaibhav
+    email: vaibhav.tiwari@bennett.edu.in
+    affiliation: Bennett University
+  - family-names: Pandey
+    given-names: Ashish
+    email: ashish.pandey@jaipur.manipal.edu
+    affiliation: Manipal University Jaipur
+abstract: >-
+  EpochCut admits dynamic multi-agent topology changes only after computing
+  and independently verifying a monitor cut that closes every declared
+  untrusted-source to protected-effect path.
+keywords:
+  - agentic AI
+  - multi-agent systems
+  - runtime security
+  - prompt injection
+  - Model Context Protocol
+  - graph cuts
+preferred-citation:
+  type: article
+  title: "EpochCut: Verifiable Attack-Path Closure for Dynamic Multi-Agent LLM Systems"
+  year: 2026
+  authors:
+    - family-names: Pandey
+      given-names: Chandrasen
+    - family-names: Tiwari
+      given-names: Vaibhav
+    - family-names: Pandey
+      given-names: Ashish

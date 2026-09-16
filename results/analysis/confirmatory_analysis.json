@@ -1,0 +1,185 @@
+{
+  "all_claim_gates_pass": true,
+  "claim_gates": {
+    "benign_accept": true,
+    "cost_reduction": true,
+    "latency": true,
+    "zero_unsafe": true
+  },
+  "cost_reduction_vs_full": 0.8870849618462684,
+  "methods": {
+    "epochcut": {
+      "attack_trials": 6000,
+      "benign_accept_rate": 1.0,
+      "closure_rate": 1.0,
+      "latency_ms": {
+        "p50": 0.7528,
+        "p95": 1.6219049999999997,
+        "p99": 2.2006050000000004
+      },
+      "mean_monitor_cost": 20.223083333333335,
+      "unsafe_accept_rate": 0.0,
+      "unsafe_accept_wilson95": [
+        0.0,
+        0.0006398334877831174
+      ],
+      "unsafe_attacks": 0
+    },
+    "full-mediation": {
+      "attack_trials": 6000,
+      "benign_accept_rate": 1.0,
+      "closure_rate": 1.0,
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "mean_monitor_cost": 179.1,
+      "unsafe_accept_rate": 0.0,
+      "unsafe_accept_wilson95": [
+        0.0,
+        0.0006398334877831174
+      ],
+      "unsafe_attacks": 0
+    },
+    "periodic-5": {
+      "attack_trials": 6000,
+      "benign_accept_rate": 1.0,
+      "closure_rate": 0.36766666666666664,
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "mean_monitor_cost": 17.845916666666668,
+      "unsafe_accept_rate": 0.696,
+      "unsafe_accept_wilson95": [
+        0.6842386889032953,
+        0.7075104963694935
+      ],
+      "unsafe_attacks": 4176
+    },
+    "sink-mediation": {
+      "attack_trials": 6000,
+      "benign_accept_rate": 1.0,
+      "closure_rate": 1.0,
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "mean_monitor_cost": 73.36666666666666,
+      "unsafe_accept_rate": 0.0,
+      "unsafe_accept_wilson95": [
+        0.0,
+        0.0006398334877831174
+      ],
+      "unsafe_attacks": 0
+    },
+    "startup-cut": {
+      "attack_trials": 6000,
+      "benign_accept_rate": 1.0,
+      "closure_rate": 0.011166666666666667,
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "mean_monitor_cost": 0.9775,
+      "unsafe_accept_rate": 1.0,
+      "unsafe_accept_wilson95": [
+        0.9993601665122168,
+        0.9999999999999999
+      ],
+      "unsafe_attacks": 6000
+    }
+  },
+  "paired_bootstrap": {
+    "periodic-5_minus_epochcut_unsafe_rate": {
+      "ci95": [
+        0.6869958333333334,
+        0.7048374999999999
+      ],
+      "estimate": 0.696,
+      "resamples": 10000,
+      "scenario_pairs": 400
+    },
+    "startup-cut_minus_epochcut_unsafe_rate": {
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "estimate": 1.0,
+      "resamples": 10000,
+      "scenario_pairs": 400
+    }
+  },
+  "raw_sha256": "9b99e0b714c2eed80a30512fb6b7f8c618a941cba5a45f2485c31aa2499703b0",
+  "strata": {
+    "16": {
+      "mean_monitor_cost": 18.788666666666668,
+      "n": 3000,
+      "p50_latency_ms": 0.61555,
+      "p95_latency_ms": 1.0853249999999999,
+      "p99_latency_ms": 1.3737069999999976
+    },
+    "32": {
+      "mean_monitor_cost": 21.154,
+      "n": 3000,
+      "p50_latency_ms": 0.8128,
+      "p95_latency_ms": 1.4060749999999995,
+      "p99_latency_ms": 1.7730279999999992
+    },
+    "64": {
+      "mean_monitor_cost": 23.899333333333335,
+      "n": 3000,
+      "p50_latency_ms": 1.20505,
+      "p95_latency_ms": 2.087469999999999,
+      "p99_latency_ms": 2.512314999999995
+    },
+    "8": {
+      "mean_monitor_cost": 17.050333333333334,
+      "n": 3000,
+      "p50_latency_ms": 0.51145,
+      "p95_latency_ms": 0.9083049999999999,
+      "p99_latency_ms": 1.0688559999999965
+    }
+  },
+  "topology_strata": {
+    "chain": {
+      "epochcut_attack_trials": 1200,
+      "epochcut_mean_monitor_cost": 19.9225,
+      "epochcut_p95_latency_ms": 1.4593899999999984,
+      "epochcut_unsafe_attacks": 0,
+      "periodic_unsafe_accept_rate": 0.7
+    },
+    "random": {
+      "epochcut_attack_trials": 1200,
+      "epochcut_mean_monitor_cost": 22.488333333333333,
+      "epochcut_p95_latency_ms": 2.118564999999999,
+      "epochcut_unsafe_attacks": 0,
+      "periodic_unsafe_accept_rate": 0.685
+    },
+    "ring": {
+      "epochcut_attack_trials": 1200,
+      "epochcut_mean_monitor_cost": 19.9225,
+      "epochcut_p95_latency_ms": 1.4656099999999999,
+      "epochcut_unsafe_attacks": 0,
+      "periodic_unsafe_accept_rate": 0.7
+    },
+    "star": {
+      "epochcut_attack_trials": 1200,
+      "epochcut_mean_monitor_cost": 18.923333333333332,
+      "epochcut_p95_latency_ms": 1.5877699999999986,
+      "epochcut_unsafe_attacks": 0,
+      "periodic_unsafe_accept_rate": 0.7025
+    },
+    "tree": {
+      "epochcut_attack_trials": 1200,
+      "epochcut_mean_monitor_cost": 19.85875,
+      "epochcut_p95_latency_ms": 1.439509999999999,
+      "epochcut_unsafe_attacks": 0,
+      "periodic_unsafe_accept_rate": 0.6925
+    }
+  }
+}

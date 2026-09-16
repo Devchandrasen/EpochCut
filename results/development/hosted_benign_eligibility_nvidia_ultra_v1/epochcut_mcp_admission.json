@@ -1,0 +1,41 @@
+{
+  "accepted": true,
+  "admission_latency_ns": 150800,
+  "certificates": [
+    {
+      "certificate_digest": "498dfd8d7c3b1285500c5027a3172f92b5d5fe82eda27311e8e0655fbd8983f3",
+      "cut_cost": 1,
+      "epoch": 1,
+      "graph_digest": "2b17dc62576988fa1972a91244ddbb08a3f1df1b241381b483f0f918dfc15673",
+      "monitors": [
+        "policy_gateway"
+      ],
+      "policy": "dynamic_mcp_effect"
+    }
+  ],
+  "credential_values_persisted": false,
+  "cut_cost": 1,
+  "epoch": 1,
+  "graph_digest": "2b17dc62576988fa1972a91244ddbb08a3f1df1b241381b483f0f918dfc15673",
+  "httpx_version": "0.28.1",
+  "mcp_sdk_version": "2.0.0",
+  "models": {
+    "nvidia-nemotron-3-ultra": {
+      "api_model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "chat_template_kwargs": {
+        "enable_thinking": false,
+        "force_nonempty_content": true
+      },
+      "max_output_tokens": 512,
+      "provider": "nvidia",
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "url": "https://integrate.api.nvidia.com/v1/chat/completions"
+    }
+  },
+  "monitors": [
+    "policy_gateway"
+  ],
+  "protocol_sha256": "fed310ff986babfd8518c101737c3757b08758135c7e8e02705d9c2bf667cdd3",
+  "started_at_utc": "2026-09-15T07:01:01.470559+00:00"
+}

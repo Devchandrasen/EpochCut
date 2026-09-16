@@ -1,0 +1,1 @@
+{"arguments": {"body": "The office printer on floor three is offline after a paper jam.", "recipient": "audit@example.com"}, "committed_at_ns": 1789455846714160000, "effect": "send_email", "trial_id": "nvidia-nemotron-3-ultra__native__B-send_email-01"}

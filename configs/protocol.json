@@ -1,0 +1,17 @@
+{
+  "protocol_version": "1.0-frozen",
+  "seeds": [101, 211, 307, 401, 503, 601, 701, 809, 907, 1009, 1103, 1201, 1301, 1409, 1511, 1601, 1709, 1801, 1901, 2003],
+  "topologies": ["chain", "ring", "star", "tree", "random"],
+  "agent_counts": [8, 16, 32, 64],
+  "mutations_per_scenario": 30,
+  "periodic_interval": 5,
+  "primary_metric": "unsafe_accept_rate_adversarial",
+  "secondary_metrics": ["closure_rate_all", "benign_accept_rate", "mean_monitor_cost", "p95_admission_latency_ms"],
+  "claim_gate": {
+    "epochcut_unsafe_accept_rate_adversarial_max": 0.0,
+    "epochcut_benign_accept_rate_min": 0.99,
+    "epochcut_cost_reduction_vs_full_min": 0.5,
+    "epochcut_p95_admission_latency_ms_max": 25.0
+  }
+}
+

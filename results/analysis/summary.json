@@ -1,0 +1,114 @@
+{
+  "methods": {
+    "epochcut": {
+      "benign_accept_rate": 1.0,
+      "closure_rate_all": 1.0,
+      "mean_monitor_cost": 20.223083333333335,
+      "mean_monitor_count": 8.115166666666667,
+      "n": 12000,
+      "p50_admission_latency_ms": 0.7528,
+      "p95_admission_latency_ms": 1.6219049999999997,
+      "p99_admission_latency_ms": 2.2006050000000004,
+      "unsafe_accept_rate_adversarial": 0.0
+    },
+    "full-mediation": {
+      "benign_accept_rate": 1.0,
+      "closure_rate_all": 1.0,
+      "mean_monitor_cost": 179.1,
+      "mean_monitor_count": 42.3,
+      "n": 12000,
+      "p50_admission_latency_ms": 0.0,
+      "p95_admission_latency_ms": 0.0,
+      "p99_admission_latency_ms": 0.0,
+      "unsafe_accept_rate_adversarial": 0.0
+    },
+    "periodic-5": {
+      "benign_accept_rate": 1.0,
+      "closure_rate_all": 0.36766666666666664,
+      "mean_monitor_cost": 17.845916666666668,
+      "mean_monitor_count": 7.24625,
+      "n": 12000,
+      "p50_admission_latency_ms": 0.0,
+      "p95_admission_latency_ms": 0.0,
+      "p99_admission_latency_ms": 0.0,
+      "unsafe_accept_rate_adversarial": 0.696
+    },
+    "sink-mediation": {
+      "benign_accept_rate": 1.0,
+      "closure_rate_all": 1.0,
+      "mean_monitor_cost": 73.36666666666666,
+      "mean_monitor_count": 5.9,
+      "n": 12000,
+      "p50_admission_latency_ms": 0.0,
+      "p95_admission_latency_ms": 0.0,
+      "p99_admission_latency_ms": 0.0,
+      "unsafe_accept_rate_adversarial": 0.0
+    },
+    "startup-cut": {
+      "benign_accept_rate": 1.0,
+      "closure_rate_all": 0.011166666666666667,
+      "mean_monitor_cost": 0.9775,
+      "mean_monitor_count": 0.9775,
+      "n": 12000,
+      "p50_admission_latency_ms": 0.0,
+      "p95_admission_latency_ms": 0.0,
+      "p99_admission_latency_ms": 0.0,
+      "unsafe_accept_rate_adversarial": 1.0
+    }
+  },
+  "protocol": {
+    "agent_counts": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "claim_gate": {
+      "epochcut_benign_accept_rate_min": 0.99,
+      "epochcut_cost_reduction_vs_full_min": 0.5,
+      "epochcut_p95_admission_latency_ms_max": 25.0,
+      "epochcut_unsafe_accept_rate_adversarial_max": 0.0
+    },
+    "mutations_per_scenario": 30,
+    "periodic_interval": 5,
+    "primary_metric": "unsafe_accept_rate_adversarial",
+    "protocol_version": "1.0-frozen",
+    "secondary_metrics": [
+      "closure_rate_all",
+      "benign_accept_rate",
+      "mean_monitor_cost",
+      "p95_admission_latency_ms"
+    ],
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601,
+      701,
+      809,
+      907,
+      1009,
+      1103,
+      1201,
+      1301,
+      1409,
+      1511,
+      1601,
+      1709,
+      1801,
+      1901,
+      2003
+    ],
+    "topologies": [
+      "chain",
+      "ring",
+      "star",
+      "tree",
+      "random"
+    ]
+  },
+  "row_count": 60000,
+  "wall_time_ns": 13982320800
+}

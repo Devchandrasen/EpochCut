@@ -1,0 +1,10 @@
+{
+  "captured_at": "2026-09-15T11:00:00+05:30",
+  "operating_system": "Microsoft Windows 11 Home Single Language 10.0.26200 64-bit",
+  "processor": "Intel(R) Core(TM) Ultra 7 255HX",
+  "physical_cores": 20,
+  "logical_processors_reported": 20,
+  "visible_memory_kib": 16165828,
+  "python": "3.12.10"
+}
+

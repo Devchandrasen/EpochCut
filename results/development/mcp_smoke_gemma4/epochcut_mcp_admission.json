@@ -1,0 +1,25 @@
+{
+  "accepted": true,
+  "admission_latency_ns": 114400,
+  "certificates": [
+    {
+      "certificate_digest": "498dfd8d7c3b1285500c5027a3172f92b5d5fe82eda27311e8e0655fbd8983f3",
+      "cut_cost": 1,
+      "epoch": 1,
+      "graph_digest": "2b17dc62576988fa1972a91244ddbb08a3f1df1b241381b483f0f918dfc15673",
+      "monitors": [
+        "policy_gateway"
+      ],
+      "policy": "dynamic_mcp_effect"
+    }
+  ],
+  "cut_cost": 1,
+  "epoch": 1,
+  "graph_digest": "2b17dc62576988fa1972a91244ddbb08a3f1df1b241381b483f0f918dfc15673",
+  "mcp_sdk_version": "2.0.0",
+  "monitors": [
+    "policy_gateway"
+  ],
+  "ollama_version": "ollama version is 0.24.0",
+  "protocol_sha256": "4c07de7ea6ef869da8f38f059a79f4dac93d54ae4a8434d86d93dfa872264e3a"
+}

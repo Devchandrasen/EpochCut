@@ -1,0 +1,22 @@
+{
+  "configs/hosted_mcp_protocol_v3.json": "34df763bf40f1626d383a522dfb6ee67f9d5d6240b7bc39904a2d335e31aa9e5",
+  "configs/mcp_llm_protocol.json": "a575a04c326ec2a6a38aa8d1782265f91b8f4c8219fa502fa0e1c18887b42908",
+  "configs/protocol.json": "75cd3dce6a2ab9dfaca4676c734c5a6243a23f3f7fa3a9626c3c13c28ae9b458",
+  "paper/figures/architecture.pdf": "d98bf837141ebcca1fcb4484c2a2163fd1a345897297d27ce68a09e250e9d844",
+  "paper/figures/latency_scaling.pdf": "174fd93b8e57c11feffde3b8e17f3181c6da03445143e905549b8f9c2d2c1889",
+  "paper/figures/mcp_llm_security.pdf": "db9996eb0a810543f1279a10347f2c928639fa7b7d3f7511496d53d1a1584080",
+  "paper/figures/security_cost.pdf": "b411b80fe2bc0ff90b5965409d1e2b3849e05d2f08a75034c231a6472e1862cb",
+  "paper/main.pdf": "38e295d5f641c0be7819e305744d06da163f0b3646911f810bc467b58e2831e0",
+  "results/analysis/confirmatory_analysis.json": "7b406ced67218a9b4159822ff025ac1ec89ca9839849ba0489f3a2c1e6488963",
+  "results/hosted_confirmatory_v3/analysis/hosted_mcp_llm_analysis.json": "dd664311f950845bd21c46aeb4890dc4a46114c1c08d05613cb58e8595a710bf",
+  "results/hosted_confirmatory_v3/epochcut_mcp_admission.json": "9225eee84e374093ab279c659f0d9cb0a50e8c7805ddd678ff68310d29e6f1a1",
+  "results/hosted_confirmatory_v3/hosted_mcp_llm_transcripts.jsonl": "58e39bc846fd7729372f5d52e1ad358acb4657ec97486be000e6d9a5f266af19",
+  "results/hosted_confirmatory_v3/hosted_mcp_llm_trials.csv": "a76196c034c376f9ee665a0b2514ead582a91a19d624137d449a28ca99698295",
+  "results/hosted_confirmatory_v3/mcp_effect_ledger.jsonl": "a9226e9e35548d46182c2a6ececff66df0c64389f0ce5723f230a76e140e3d56",
+  "results/mcp_confirmatory_v1/analysis/mcp_llm_analysis.json": "2ed112e6428191f5ce7301a816a113f7ba4913415db575c7b48e3a9b49c122e4",
+  "results/mcp_confirmatory_v1/raw/epochcut_mcp_admission.json": "96dc931272bcf1a123d5c7bd95747830af8cf2539c361429f01467c61a11b698",
+  "results/mcp_confirmatory_v1/raw/mcp_effect_ledger.jsonl": "23d3f4f676d82b008a09575979b1bc860dabe8f2096fad8bde100ff48cdcf1d8",
+  "results/mcp_confirmatory_v1/raw/mcp_llm_transcripts.jsonl": "86918a8192cac7b238043f34d9e92790f068077634aa9c2e4b08506ac4425ae0",
+  "results/mcp_confirmatory_v1/raw/mcp_llm_trials.csv": "c7a30fab55f1a12fa932c9e75a365d4af5df054ccc6d454a34305f4a404fa9bf",
+  "results/raw/dynamic_topology_results.csv": "9b99e0b714c2eed80a30512fb6b7f8c618a941cba5a45f2485c31aa2499703b0"
+}

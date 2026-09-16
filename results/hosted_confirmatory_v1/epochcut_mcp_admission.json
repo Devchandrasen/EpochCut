@@ -1,0 +1,48 @@
+{
+  "accepted": true,
+  "admission_latency_ns": 128700,
+  "certificates": [
+    {
+      "certificate_digest": "498dfd8d7c3b1285500c5027a3172f92b5d5fe82eda27311e8e0655fbd8983f3",
+      "cut_cost": 1,
+      "epoch": 1,
+      "graph_digest": "2b17dc62576988fa1972a91244ddbb08a3f1df1b241381b483f0f918dfc15673",
+      "monitors": [
+        "policy_gateway"
+      ],
+      "policy": "dynamic_mcp_effect"
+    }
+  ],
+  "credential_values_persisted": false,
+  "cut_cost": 1,
+  "epoch": 1,
+  "graph_digest": "2b17dc62576988fa1972a91244ddbb08a3f1df1b241381b483f0f918dfc15673",
+  "httpx_version": "0.28.1",
+  "mcp_sdk_version": "2.0.0",
+  "models": {
+    "gemini-3.6-flash": {
+      "api_model": "gemini-3.6-flash",
+      "max_output_tokens": 512,
+      "provider": "gemini",
+      "thinking_level": "low",
+      "url_template": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    },
+    "nvidia-nemotron-3-super": {
+      "api_model": "nvidia/nemotron-3-super-120b-a12b",
+      "chat_template_kwargs": {
+        "enable_thinking": false,
+        "force_nonempty_content": true
+      },
+      "max_output_tokens": 512,
+      "provider": "nvidia",
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "url": "https://integrate.api.nvidia.com/v1/chat/completions"
+    }
+  },
+  "monitors": [
+    "policy_gateway"
+  ],
+  "protocol_sha256": "bf85639f2c81a8ac088b8cfc027061266d048c3b46a030c43cf4f02371a857c3",
+  "started_at_utc": "2026-09-15T06:55:20.288544+00:00"
+}

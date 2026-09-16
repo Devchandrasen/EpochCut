@@ -1,0 +1,1 @@
+trial_id,model,mode,case_id,case_kind,target_tool,source_read,effect_attempts,effect_attempts_after_source,effect_commits,effect_commits_after_source,guard_blocks,benign_correct,mcp_calls,agent_turns,model_latency_ms,guard_latency_ms,final_response_chars,error
