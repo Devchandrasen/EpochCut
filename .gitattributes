@@ -20,6 +20,7 @@
 # Frozen protocols and evidence are hash-bound; preserve their exact bytes.
 configs/** -text
 results/** -text
+results/analysis/MANIFEST.sha256.json text eol=lf
 
 *.pdf binary
 *.png binary

@@ -73,7 +73,7 @@ manifest = {
     str(path.relative_to(ROOT)).replace("\\", "/"): hashlib.sha256(path.read_bytes()).hexdigest()
     for path in required
 }
-(ROOT / "results" / "analysis" / "MANIFEST.sha256.json").write_text(
-    json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8"
+(ROOT / "results" / "analysis" / "MANIFEST.sha256.json").write_bytes(
+    json.dumps(manifest, indent=2, sort_keys=True).encode("utf-8")
 )
 print(json.dumps({"status": "PASS", "files": len(required)}, sort_keys=True))
