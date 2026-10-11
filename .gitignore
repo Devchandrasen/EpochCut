@@ -14,6 +14,7 @@ dist/
 tmp/
 output/
 results/reproduction/
+audit/fresh_reproduction.json
 
 # LaTeX intermediates (the verified paper/main.pdf remains versioned)
 paper/*.aux

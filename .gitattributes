@@ -15,6 +15,9 @@
 *.bib text eol=lf
 *.cff text eol=lf
 *.drawio text eol=lf
+*.mmd text eol=lf
+*.svg text eol=lf
+*.excalidraw text eol=lf
 *.ps1 text eol=crlf
 
 # Frozen protocols and evidence are hash-bound; preserve their exact bytes.
@@ -27,3 +30,12 @@ results/analysis/MANIFEST.sha256.json text eol=lf
 *.jpg binary
 *.jpeg binary
 *.zip binary
+
+# Keep generated evidence and presentation exports out of source-code diffs.
+results/** linguist-generated=true
+results/lnet/raw/network_metadata.json -diff
+docs/assets/** linguist-generated=true
+paper_lnet/generated/** linguist-generated=true
+diagrams/*.svg linguist-generated=true
+diagrams/*.png linguist-generated=true
+diagrams/*.excalidraw linguist-generated=true

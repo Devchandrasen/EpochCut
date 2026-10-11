@@ -34,8 +34,17 @@ jobs:
       - name: Run executable quick start
         run: python examples/quickstart.py
 
+      - name: Run retained-epoch walkthrough
+        run: python examples/temporal_quickstart.py
+
       - name: Verify frozen research artifacts
         run: python scripts/verify_artifacts.py
+
+      - name: Verify temporal evidence and isolated reanalysis
+        run: python scripts/verify_temporal_artifacts.py --reanalyse
+
+      - name: Check presentation data, visual hashes and documentation links
+        run: python scripts/verify_project_showcase.py
 
       - name: Confirm the evidence manifest is reproducible
         run: git diff --exit-code -- results/analysis/MANIFEST.sha256.json

@@ -1,0 +1,32 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "fontSize": "17px", "primaryColor": "#e8f5f4", "primaryTextColor": "#142d44", "primaryBorderColor": "#0b807b", "lineColor": "#44627a", "clusterBkg": "#f7fafc", "clusterBorder": "#b5cad8"}, "flowchart": {"curve": "basis", "nodeSpacing": 28, "rankSpacing": 36}}}%%
+flowchart TD
+  subgraph control[Trusted control: admit a configuration]
+    direction LR
+    G[Declared graph and policies] --> S[Minimum cost placement]
+    S --> V[Independent closure verification]
+    V --> I[Install and acknowledge]
+    I --> E[Activate epoch e]
+  end
+  subgraph lifetime[Request lifetime: authority is outside the payload]
+    direction LR
+    R[Authenticated request: epoch e] --> Q[Agent queue or scoped child]
+    U[Activate epoch e+1] -. New admissions .-> N[New request: epoch e+1]
+    U -. Pending work keeps e .-> Q
+    Q --> P[Retained enforcement point]
+    P --> A[Exact action approval and grant]
+  end
+  subgraph effect[Trusted effect broker: local recording boundary]
+    direction LR
+    C{Matching grant and current authority?}
+    C -- Invalid --> D[Deny]
+    C -- Valid --> L[Local lock and ledger transaction]
+    L --> T[Release reference; retire when idle]
+  end
+  control --> lifetime
+  lifetime --> effect
+  classDef trusted fill:#e4f6f2,stroke:#0b807b,color:#142d44;
+  classDef pending fill:#fff2d5,stroke:#b87816,color:#142d44;
+  classDef deny fill:#fde9e7,stroke:#bf493d,color:#142d44;
+  class G,S,V,I,E,R,N,P,C,L,T trusted;
+  class Q,U,A pending;
+  class D deny;

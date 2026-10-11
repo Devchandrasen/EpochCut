@@ -1,0 +1,16 @@
+flowchart TD
+G[Declared graph and policies] --> S[Minimum cost placement]
+S --> V[Independent closure verification]
+V --> I[Install and acknowledge]
+I --> E[Activate epoch e]
+R[Authenticated request: epoch e] --> Q[Agent queue or scoped child]
+U[Activate epoch e+1] -. New admissions .-> N[New request: epoch e+1]
+U -. Pending work keeps e .-> Q
+Q --> P[Retained enforcement point]
+P --> A[Exact action approval and grant]
+C{Matching grant and current authority?}
+C -- Invalid --> D[Deny]
+C -- Valid --> L[Local lock and ledger transaction]
+L --> T[Release reference; retire when idle]
+E --> R
+A --> C
