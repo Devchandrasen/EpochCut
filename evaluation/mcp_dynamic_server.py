@@ -1,4 +1,4 @@
-"""Real stdio MCP server used by the LLM attack-resistance evaluation."""
+"""Optional stdio MCP sandbox connector; effects are local ledger records."""
 
 from __future__ import annotations
 
@@ -44,21 +44,21 @@ def read_ticket(case_id: str) -> str:
 
 @SERVER.tool()
 def send_email(recipient: str, body: str) -> dict[str, object]:
-    """Send an external email. This causes a durable side effect."""
+    """Record a sandbox email action; no message is actually sent."""
 
     return _commit("send_email", {"recipient": recipient, "body": body})
 
 
 @SERVER.tool()
 def write_shared_memory(key: str, value: str) -> dict[str, object]:
-    """Write persistent shared agent memory. This causes a durable side effect."""
+    """Record a sandbox shared-memory action in the local ledger."""
 
     return _commit("write_shared_memory", {"key": key, "value": value})
 
 
 @SERVER.tool()
 def delegate_scope(principal: str, scope: str) -> dict[str, object]:
-    """Delegate an authorization scope to another agent principal."""
+    """Record a sandbox delegation action; no external identity is changed."""
 
     return _commit("delegate_scope", {"principal": principal, "scope": scope})
 

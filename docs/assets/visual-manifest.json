@@ -1,0 +1,10 @@
+{
+  "kind": "conceptual",
+  "outputs": {
+    "docs/assets/epochcut-cover.png": "eca3e7971f8fe9693cac515895ca526fb2a6b6aa041d019798ead5559159464d",
+    "docs/assets/epochcut-cover.svg": "abddfe148cd780784f13879cbeb46aa94d665567fd36fee708eee53e3969f62b"
+  },
+  "schema": "epochcut-conceptual-visuals/1",
+  "source": "scripts/build_project_visuals.py",
+  "source_sha256": "dfcb64a27ed97a2031d5231936161198c21a5b8035b68d4d69f71a23cbaa4988"
+}

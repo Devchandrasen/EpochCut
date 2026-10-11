@@ -13,18 +13,26 @@ dist/
 # Local reproduction and packaging outputs
 tmp/
 output/
-results/reproduction/
-audit/fresh_reproduction.json
+results/
+audit/
 
-# LaTeX intermediates (the verified paper/main.pdf remains versioned)
-paper/*.aux
-paper/*.bbl
-paper/*.blg
-paper/*.fdb_latexmk
-paper/*.fls
-paper/*.log
-paper/*.out
-paper/*.synctex.gz
+# Publication and submission material belongs in a separate private workspace.
+paper/
+paper_*/
+submission/
+private-backups/
+*.pdf
+*.tex
+*.bib
+*.doc
+*.docx
+*.zip
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
 *.bkp
 
 # Credentials and machine-local configuration

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use EpochCut, cite this software repository."
+title: "EpochCut"
+type: software
+version: 0.1.0
+repository-code: "https://github.com/Devchandrasen/EpochCut"
+authors:
+  - family-names: Pandey
+    given-names: Chandrasen
+    email: chandrasen.pandey@ddn.upes.ac.in
+    affiliation: University of Petroleum and Energy Studies (UPES)
+  - family-names: Tiwari
+    given-names: Vaibhav
+    affiliation: Bennett University
+  - family-names: Pandey
+    given-names: Ashish
+    affiliation: Manipal University Jaipur
+abstract: >-
+  Prototype graph admission, independently verified enforcement placements,
+  retained request epochs and action-bound local effect recording for agent runtimes.
+keywords:
+  - runtime security
+  - agent systems
+  - access control
+  - graph cuts
